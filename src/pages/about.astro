@@ -9,24 +9,31 @@ const identity = {
   hobbies: ["piano", "basketball"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "Astro", "Python", "Cpp", "LaTEX"];
+const skills = ["Python", "Cpp", "LaTEX"];
 
 ---
 
 <BaseLayout pageTitle = "About Me">
-    <p>Hi, my name is Emilio, im passionate about math and code.</p>
-    <p>I believe that you can break complex ideas into simple ones, in a way that anyone can grasp them.</p>
-    <p>This site is a reflection of swhat i´m learning, building, and thinking about.</p>
-    <p>Thanks for stopping by, feel free to reach out if you´re working on something interesting or just want to talk about the beauty of a good equation. :-)</p>
-    <p>Here are a few facts about me:</p>
-<ul>
-  <li>My full name is {identity.firstName}.</li>
-  <li>I live in {identity.country}.</li>
-  {identity.hobbies.length >= 2 &&
-    <li>Two of my hobbies are {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-  }
-</ul>
-<p>My skills are:</p>
+
+<p>Hey! I'm Emilio — I'm passionate about math and code.</p>
+
+  <p>I genuinely believe that even the most complex ideas can be broken down into simple, intuitive ones — the kind that anyone can truly grasp.</p>
+
+  <p>This site is a space where I share what I'm learning, building, and thinking about.</p>
+
+  <p>Thanks for stopping by! Feel free to reach out if you're working on something cool — or if you just want to chat about the beauty of a good equation. 🙂</p>
+
+  <p>Here are a few facts about me:</p>
+  <ul>
+    <li>My full name is {identity.firstName}.</li>
+    <li>I live in {identity.country}.</li>
+    {identity.hobbies.length >= 2 &&
+      <li>Two of my hobbies are {identity.hobbies[0]} and {identity.hobbies[1]}.</li>
+    }
+  </ul>
+  <p></p>
+  <p>Skills? :</p>
+
 <ul>
   {skills.map((skill) => <li> {skill}</li>)}
 </ul>
