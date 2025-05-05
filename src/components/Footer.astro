@@ -3,19 +3,33 @@ import Social from "./Social.astro";
 ---
 
 <style>
-  footer {
-    margin-top: auto;
-    width: 100%;
-    display: flex;
-    gap: 1rem;
-    color: white; 
-    justify-content: center;
-    padding: auto;
-    margin-bottom: 10px ;
-  }
-</style>
 
-<footer>
-  <Social platform = "Instagram" username = "e.l.b_11" />
-  <Social platform = "Github" username = "eaglecode0" />
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  footer {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  padding: 70px 0;
+  box-sizing: border-box;
+  background-color: #0e1014;
+
+  margin-top: 2rem;
+  }
+
+
+
+</style>                                  
+
+  <footer>
+
+      <Social platform = "Instagram" username = "e.l.b_11" />
+      <Social platform = "Github" username = "eaglecode0" />
+
+
  </footer>
